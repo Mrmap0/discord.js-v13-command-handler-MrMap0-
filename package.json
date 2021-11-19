@@ -1,17 +1,17 @@
 {
   "name": "discord-js-handler-template",
   "version": "1.0.0",
-  "description": "Discord.js Command and Event Handler Template with example Command usages! For Questions: https://discord.gg/fS6qBSm",
+  "description": "A simple discord.js v13 command handler",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "Tomato#6966",
+  "author": "MrMap0#1893",
   "license": "ISC",
   "dependencies": {
     "ascii-table": "0.0.9",
-    "discord.js": "^12.5.1"
+    "discord.js": "^13"
   },
   "devDependencies": {
     "ascii-table": "0.0.9",
