@@ -16,7 +16,6 @@ module.exports = {
       console.log(String(e.stack).bgRed)
     }
   },
-  //changeging the duration from ms to a date
   duration: function(ms) {
       const sec = Math.floor((ms / 1000) % 60).toString();
       const min = Math.floor((ms / (60 * 1000)) % 60).toString();
@@ -24,7 +23,6 @@ module.exports = {
       const days = Math.floor((ms / (24 * 60 * 60 * 1000)) % 60).toString();
       return `\`${days}Days\`,\`${hrs}Hours\`,\`${min}Minutes\`,\`${sec}Seconds\``;
   },
-  //function for awaiting reactions
   promptMessage: async function(message, author, time, validReactions) {
     try{
       time *= 1000;
@@ -38,7 +36,6 @@ module.exports = {
       console.log(String(e.stack).bgRed)
     }
   },
-  //Function to wait some time
   delay: function(delayInms) {
     try{
       return new Promise((resolve) => {
@@ -50,7 +47,6 @@ module.exports = {
       console.log(String(e.stack).bgRed)
     }
   },
-  //randomnumber between 0 and x
   getRandomInt: function(max) {
     try{
       return Math.floor(Math.random() * Math.floor(max));
@@ -58,7 +54,6 @@ module.exports = {
       console.log(String(e.stack).bgRed)
     }
   },
-  //random number between y and x
   getRandomNum: function(min, max) {
     try{
       return Math.floor(Math.random() * Math.floor((max - min) + min));
@@ -66,7 +61,6 @@ module.exports = {
       console.log(String(e.stack).bgRed)
     }
   },
-  //function for creating a bar
   createBar: function(maxtime, currenttime, size = 25, line = "▬", slider = "🔶") {
     try{
       let bar = currenttime > maxtime ? [line.repeat(size / 2 * 2), (currenttime / maxtime) * 100] : [line.repeat(Math.round(size / 2 * (currenttime / maxtime))).replace(/.$/, slider) + line.repeat(size - Math.round(size * (currenttime / maxtime)) + 1), currenttime / maxtime];
@@ -109,12 +103,3 @@ module.exports = {
     }
   }
 }
-/**
-  * @INFO
-  * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/Discord-Js-Handler-Template
-  * @INFO
-  * Work for Milrato Development | https://milrato.eu
-  * @INFO
-  * Please mention Him / Milrato Development, when using this Code!
-  * @INFO
-*/
